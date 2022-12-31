@@ -1,0 +1,40 @@
+<h3 class="mt-3 text-center">Create Employee</h3>
+<div class="flex justify-center mt-2">
+  <div class="w-full max-w-xs">
+    <form (ngSubmit)="onSubmit()">
+      <div class="bg-gray-400 s shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <label class="text-white">First Name</label>
+        <input
+          type="text"
+          class="focus:outline-none pt-3 rounded-md mb-2"
+          [(ngModel)]="employee.firstName"
+          name="firstName"
+        />
+        <br />
+        <label for="" class="text-white">Last Name</label>
+        <br />
+        <input
+          class="focus:outline-none pt-3 rounded-md mb-2"
+          [(ngModel)]="employee.lastName"
+          name="lastName"
+        />
+        <br />
+        <label for="" class="text-white">E-mail</label>
+        <br />
+        <input
+          type="text"
+          [(ngModel)]="employee.emailId"
+          name="email"
+          class="focus:outline-none pt-3 rounded-md mb-2"
+        />
+        <br />
+        <button
+          class="p-3 bg-blue-700 rounded-md mt-3 hover:bg-blue-600 text-white"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
